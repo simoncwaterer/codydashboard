@@ -1,17 +1,16 @@
 import streamlit as st
-import pandas as pd
-import plotly.express as px
 
-from utils import CONSTANTS
-from data_loader import load_data
 from chart_creator import create_charts
+from data_loader import load_data
+from utils import CONSTANTS
 
 # Create the Streamlit app
 st.set_page_config(page_title='Usage Dashboard', layout='wide', initial_sidebar_state='auto')
 st.title('Usage Dashboard')
 st.write('This dashboard displays the number of users per day.')
 
-data = load_data()
+data_source = "s3"
+data = load_data(data_source)
 
 # sort the data by date - probably not needed
 data['users_per_day'].sort_values(CONSTANTS.DATE, inplace=True)

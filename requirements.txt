@@ -61,3 +61,4 @@ tzdata==2024.1
 urllib3==2.2.2
 Werkzeug==3.0.3
 zipp==3.19.2
+s3fs~=2024.6.1

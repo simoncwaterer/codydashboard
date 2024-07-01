@@ -66,3 +66,4 @@ class CONSTANTS:
     WEIGHTED_CAR = "weighted_car.csv"
     AVG_WCAR_BY_IDE = "avg_wcar_by_ide.csv"
     AVERAGE_COMPLETION_LATENCY = "average_completion_latency.csv"
+    S3_BUCKET = 'cody-dashboard-data'

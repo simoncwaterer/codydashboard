@@ -6,3 +6,10 @@
 out/
 .idea_modules/
 .idea/modules.xml
+.idea/misc.xml
+.idea/CodyDashboard.iml
+.idea/cody_history.xml
+Data/
+__pycache/
+.venv/
+.streamlit/secrets.toml
